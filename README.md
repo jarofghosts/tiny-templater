@@ -7,9 +7,9 @@ Just about as simple as it gets.
 
 ````js
 var templater = require('tiny-templater'),
-    tpl = templater('hey, {{ name }}');
+    tpl = templater('hey, {{ name }}, {{ phrases.question }}?');
 
-console.log(tpl({ name: 'buddy' }));
+console.log(tpl({ name: 'buddy', phrases: { question: 'what\'s the word?' } }));
 ````
 
 ## notes
