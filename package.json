@@ -1,6 +1,6 @@
 {
   "name": "tiny-templater",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tiniest templater you can imagine",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ibanishapurr/project1.git"
+    "url": "https://github.com/jarofghosts/tiny-templater.git"
   },
   "keywords": [
     "template",
@@ -25,6 +25,6 @@
   "readmeFilename": "README.md",
   "gitHead": "77b4d531dec90d39614277aa0ca41e81b4ece863",
   "bugs": {
-    "url": "https://github.com/ibanishapurr/project1/issues"
+    "url": "https://github.com/jarofghosts/tiny-templater/issues"
   }
 }
