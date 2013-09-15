@@ -1,6 +1,8 @@
 tiny templater
 ===
 
+[![Build Status](https://travis-ci.org/jarofghosts/tiny-templater.png?branch=master)](https://travis-ci.org/jarofghosts/tiny-templater)
+
 Just about as simple as it gets.
 
 ## usage
@@ -19,4 +21,3 @@ attempting to reference an undefined variable from within your template will ren
 ## license
 
 MIT
-
