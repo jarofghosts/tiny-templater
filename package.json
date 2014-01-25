@@ -1,13 +1,13 @@
 {
   "name": "tiny-templater",
   "version": "0.0.3",
-  "description": "tiniest templater you can imagine",
+  "description": "super-minimal templating",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "dotpather": "*"
+    "dotpather": "0.0.3"
   },
   "scripts": {
     "test": "node test/test.js"
@@ -23,7 +23,6 @@
   "author": "jesse keane",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "77b4d531dec90d39614277aa0ca41e81b4ece863",
   "bugs": {
     "url": "https://github.com/jarofghosts/tiny-templater/issues"
   }

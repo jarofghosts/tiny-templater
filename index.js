@@ -1,12 +1,14 @@
-var dotpather = require('dotpather');
+module.exports = template
+
+var dotpather = require('dotpather')
 
 function template(thing) {
-  var str = thing.toString();
-  return function (obj) {
-    return str.replace(/\{\{\s*([a-zA-Z0-9_\.]+)\s*\}\}/g, function (chunk, word) {
-      return dotpather(word)(obj);
-    });
+  var str = thing.toString()
+  return function template_generator(obj) {
+    return str.replace(/\{\{\s*([\w_\.]+)\s*\}\}/g, template_lookup)
+
+    function template_lookup(chunk, word) {
+      return dotpather(word)(obj)
+    }
   }
 }
-
-module.exports = template;
