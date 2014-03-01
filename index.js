@@ -1,7 +1,7 @@
 module.exports = template
 
 var dotpather = require('dotpather'),
-    template_rex = /\{\{\s*([\w_\.]+)\s*\}\}/g
+    template_rex = /\{\{\s*([\w_\.\d]+)\s*\}\}/g
 
 function template(thing) {
   var str = thing.toString()
@@ -9,7 +9,7 @@ function template(thing) {
     return str.replace(template_rex, template_lookup)
 
     function template_lookup(chunk, word) {
-      return dotpather(word)(obj)
+      return dotpather(word)(obj) || ''
     }
   }
 }
