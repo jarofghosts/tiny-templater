@@ -7,10 +7,10 @@
     "test": "test"
   },
   "dependencies": {
-    "dotpather": "0.1.1"
+    "dotpather": "^0.1.1"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jarofghosts/tiny-templater/issues"
+  },
+  "devDependencies": {
+    "tape": "^3.0.2"
   }
 }
