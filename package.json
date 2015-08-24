@@ -1,6 +1,6 @@
 {
   "name": "tiny-templater",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "super-minimal templating",
   "main": "index.js",
   "directories": {
