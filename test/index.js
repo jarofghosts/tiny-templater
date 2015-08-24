@@ -19,6 +19,14 @@ test('returns empty string if undefined', function(t) {
   t.equal(tpl({}), 'hello ')
 })
 
+test('works with falsey values', function(t) {
+  var tpl = template('hello {{ user }}')
+
+  t.plan(1)
+
+  t.equal(tpl({user: 0}), 'hello 0')
+})
+
 test('does deep property lookup', function(t) {
   var tpl = template('hello {{ user.name }}, {{ word }}')
 

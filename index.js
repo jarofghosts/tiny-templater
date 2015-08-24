@@ -11,7 +11,13 @@ function template(thing) {
     return str.replace(templateRex, templateLookup)
 
     function templateLookup(chunk, word) {
-      return dotpather(word)(obj) || ''
+      var result = dotpather(word)(obj)
+
+      if(result === undefined) {
+        result = ''
+      }
+
+      return result
     }
   }
 }
