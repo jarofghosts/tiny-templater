@@ -12,7 +12,7 @@ simple templating for simple needs
 
 ```javascript
 var templater = require('tiny-templater')
-  , tpl = templater('hey, {{ name }}, {{ phrases.question }}?')
+var tpl = templater('hey, {{ name }}, {{ phrases.question }}?')
 
 console.log(tpl({name: 'buddy', phrases: {question: 'what\'s the word?'}}))
 // "hey, buddy, what's the word?"
