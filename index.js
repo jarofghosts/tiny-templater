@@ -1,19 +1,19 @@
-module.exports = template
-
 var dotpather = require('dotpather')
 
 var templateRex = /\{\{\s*([\w_\.\d]+)\s*\}\}/g
 
-function template(thing) {
+module.exports = template
+
+function template (thing) {
   var str = thing.toString()
 
-  return function templateGenerator(obj) {
+  return function templateGenerator (obj) {
     return str.replace(templateRex, templateLookup)
 
-    function templateLookup(chunk, word) {
+    function templateLookup (chunk, word) {
       var result = dotpather(word)(obj)
 
-      if(result === undefined) {
+      if (result === undefined) {
         result = ''
       }
 
